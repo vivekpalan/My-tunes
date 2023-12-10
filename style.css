@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Header section */
+
+.nav-container{
+    width: 100%;
+    height: 65px;
+    background-color: #4B0081;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+.logo{
+    margin-left: 80px;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.menu-items>li{
+    list-style: none;
+    margin-inline: 30px;
+}
+li>a{
+    color: white;
+    text-decoration: none;    
+}
+
+/* Hero section */
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/hero_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline: 8rem;
+}
+.contents>h1{
+    font-size: 72px;
+    margin-bottom: 24px;
+}
+.contents>h4{
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.para{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Music section */
+.mus-sec{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #290647;
+    color: white;
+    padding: 8rem;
+    position: relative;
+}
+.music-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music-icon>h4{
+    font-size: 35px;
+    margin-block: 24px;
+}
+.fa-music{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.music-info{
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.free-trial-btn{
+    padding:10px 20px;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.836);
+    border: none;
+    outline: none;
+    margin-bottom: 32px;
+}
+.available{
+    font-weight: 100;
+    font-size: 16px;
+    color: grey;
+}
+.music-mac{
+    width: 100%;
+    height: 30vh;
+    background-color: #290647;
+} 
+.mac-img{
+    position: relative;
+    top: 10%;
+    left: 50%;  
+    transform: translateX(-50%);
+}
+
+
+/* Section 2 */
+.section-2{
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 8rem;
+}
+.section-2>h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-block: 48px;
+}
+.info{
+    text-align: center;
+    margin-bottom:32px ;
+}
+.readmore{
+    padding: 10px 20px;
+    background-color: #4B0081;
+    border: none;
+    outline: none;
+    color: white;
+    margin-bottom: 48px;
+}
+
+
+/* Section 3 */
+.section-3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./img/video.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 8rem;
+}
+.section-3>h4{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.section-3>p{
+    text-align: center;   
+}
+
+/* Gift card */
+.gift-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem;
+    gap: 64px;
+}
+.gift-card-contents{
+    padding: 24px;
+}
+.gift-card-contents>h4{
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.gift-card-contents>input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gainsboro;
+    margin-block: 32px ;
+    display: block;
+    padding: 0 0 5px 10px;
+}
+.redeem{
+    padding: 10px 20px;
+    background-color: #290647;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+/* Footer section */
+.footer-pg{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #290647;
+    padding: 5rem 8rem;
+}
+.footer-pg>div>h4{
+    color: white;
+    margin-bottom: 24px;
+    border-bottom: 2px solid white;
+}
+.footer-pg>div>li{
+  
+  list-style: none;
+}
+.footer-pg>div>a{
+    margin-block:32px;
+}
+
+
+/* Responsiveness */
+
+@media (max-width:768px){  
+    .logo{
+        margin-left: 50px;
+    }
+    .menu-items{
+        margin-right: 30px;
+    }
+    .menu-items>li{
+        list-style: none;
+        margin-inline: 20px;
+    }
+    
+    .contents{
+        padding-inline: 4rem;
+    }
+    .contents>h1{
+        font-size: 64px;
+        margin-bottom: 24px;
+    }
+    .contents>h4{
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+  
+    .mus-sec{
+        padding: 4rem;
+    }
+    .music-icon>h4{
+        font-size: 24px;
+        margin-block: 48px;
+    }
+    .fa-music{
+        font-size: 16px;
+    }
+ 
+    .mac-img{
+        position: relative;
+        top: 10%;
+        left: 50%;  
+        transform: translateX(-50%);
+    }
+    .music-mac>img{
+        width: 100%;
+    }
+    .gift-card{
+        flex-direction: column;
+        padding: 4rem;
+    }
+    .gift-card-img{
+        width: 50%;
+        text-align: center;
+    }
+    .gift-card-contents{
+        text-align: center; 
+    }
+    .gift-card-contents>input{
+        text-align: center;
+        margin-top: 48px;
+    }
+    .gift-card-contents>button{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    
+    .section-2>img{
+        width: 50%;
+    }
+    .readmore{
+        padding:  15px 25px;
+    }
+    .footer-pg{
+        justify-content: space-between;
+        padding:4rem;
+        font-size: 15px;
+    }
+    .footer-pg>div>li{  
+      margin-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width:1024px){
+
+    .gift-card{
+        
+        flex-direction: column;
+        padding: 4rem;
+        gap: 48px;
+    }
+    .gift-card-contents{
+        text-align: center;
+        font-size: 20px;
+    }
+    .gift-card-contents>h4{
+        font-size: 48px;
+    }
+    .gift-card-contents>input{
+        text-align: center;
+        font-size: 20px;
+    }
+    .redeem{
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+
+    .footer-pg{
+        padding: 4rem;
+        font-size: 18px;
+    }
+    .section-3{
+        
+        height: 100vh;
+        padding: 4rem;
+    }
+    .section-3>h4{
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .section-3>p{
+        font-size: 20px;  
+    }
+    .section-2{
+        height: 200vh;
+        font-size: 20px;
+        padding: 4rem;
+    }
+
+    .readmore{
+        font-size: 18px;
+        padding: 15px 35px;
+        background-color: #4B0081;
+        border: none;
+        outline: none;
+        color: white;
+        margin-bottom: 48px;
+    }
+    .section-2>img{
+        width: 100%;
+    }
+
+    .mus-sec{
+        padding: 4rem;
+        position: relative;
+    }
+    .music-icon{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .music-icon>h4{
+        font-size: 35px;
+        margin-block: 24px;
+    }
+    .fa-music{
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    .music-info{
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+    .free-trial-btn{
+        padding:10px 20px;
+        color: white;
+        background-color: rgba(255, 68, 0, 0.836);
+        border: none;
+        outline: none;
+        margin-bottom: 32px;
+    }
+    .available{
+        font-weight: 100;
+        font-size: 16px;
+        color: grey;
+    }
+    .music-mac{
+        width: 100%;
+        height: 30vh;
+        background-color: #290647;
+    } 
+    .mac-img{
+        position: relative;
+        top: 10%;
+        left: 50%;  
+        transform: translateX(-50%);
+    }
+    
+
+}
+
+@media (max-width:450px){
+.logo{
+    margin-left: 25px;
+}
+.menu-items{  
+    justify-content: space-evenly;
+    margin-right: 30px;
+}
+.hero-section{
+    width: 100%;
+}
+.contents{
+  padding-inline: 4rem;
+}
+.mus-sec{
+    font-size: 18px;
+}
+
+.free-trial-btn{
+    padding:15px 35px;
+    color: white;
+    background-color: rgba(255, 68, 0, 0.836);
+    border: none;
+    outline: none;
+    margin-bottom: 32px;
+}
+.available{
+    font-weight: 100;
+    font-size: 16px;
+    color: grey;
+}
+
+.mac-img{
+    width: 100%;
+    position: relative;
+    top: 10%;
+    left: 50%;  
+    transform: translateX(-50%);
+}
+.gift-card{
+    padding: 1rem;
+}
+.gift-card-img{
+    width: 100%;
+}
+
+.redeem{
+    padding: 10px 20px;
+    background-color: #290647;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+    
+}
+
+
+
+
